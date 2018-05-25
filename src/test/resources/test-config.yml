@@ -1,0 +1,15 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 64527
+      bindHost: 127.0.0.1
+  adminConnectors:
+    - type: http
+      port: 64528
+      bindHost: 127.0.0.1
+logging:
+    level: INFO
+    loggers:
+        io.dropwizard: INFO
+    appenders:
+    - type: console
